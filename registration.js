@@ -7,7 +7,7 @@ function previouspagecmpy() {
 }
 
 function thqfn() {
-	alert("Thank you for applying Squash Apps Private Limited")
+	alert("Thank you for applying Squash Apps Private Limited");
 }
 
 // ----------------------location redirection-------------------------------------
