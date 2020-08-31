@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Registration From</title>
+  <link rel="stylesheet" type="text/css" href="company.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="registration.js"></script>
+  <!-- <script type="text/javascript" src="registration.js"></script> -->
+</head>
+
+<body class="background">
+
+	<div class="tab">
+
+      <table style="width:100%">
+        <tr>
+          <th><i class="fa fa-check-circle circle"></i><span class="personal">Personal Details</span></th>
+          <th><span class="number">2</span>Company Details</th>
+          <th class="email"><span class="number2">3</span>Email Verification</th>
+        </tr>
+      </table>
+
+    </div>
+
+<div>
+		<div class="header">
+            <h1>Add your company details</h1>
+            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+        </div>
+
+    <form action="emailverification.html" method="POST" onSubmit="return cmpyformValidation()">
+
+      <div class="centerbackground">
+      	<br>
+         <div>
+         	<img src="https://i.ibb.co/fGpQLkN/img-avatar.png" alt="Avatar" class="avatar">
+         	<!-- <img src="https://imgbbb.com/images/2020/08/30/img_192880.png" alt="Avatar" class="avatar"> -->
+         	<p>Upload your company logo</p>
+         </div>
+
+         <div>
+            <label class="centeralign">Company Name</label>
+            <input type="text" id="companyname" placeholder="Enter your Company Name">
+         </div>
+         <br>
+         <div>
+            <label class="centeralign">Email Id</label>
+            <input type="text" placeholder="Enter you Email id" id="email">
+         </div>
+         <br>
+
+         <div>
+            <label class="centeralign">Job Title</label>
+            <input type="text" id="jobtitle" placeholder="Job Title">
+         </div>
+         <br>
+
+         <div>
+            <label class="centeralign">Year of Experience</label>
+            <input type="text" id="yearofexp" placeholder="Year of Experience">
+         </div>
+         <br>
+
+         <div class="centeralign">
+         	<input type="checkbox" id="terms and conditions" name="terms and conditions" value="Bike" required>
+  			<label for="terms and conditions">I accept the<span class="terms"> Terms and Conditions</span></label>
+         </div>
+         <br>
+
+         <div class="centeralign">
+         		<button class="backbt" onclick="previouspagereg()">Back</button>
+         		<button class="send" onclick="localstoragecmpy()" type="submit" id="submitbutton" disabled="disabled" value="Submit">Send OTP</button>
+         </div>
+         <br>
+
+      </div>
+
+    </form>
+
+</div>
+	
+
+</body>
+
+</html>

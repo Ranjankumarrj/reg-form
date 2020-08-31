@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Registration From</title>
+  <link rel="stylesheet" type="text/css" href="emailverification.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script type="text/javascript" src="registration.js"></script>
+
+  <!-- <script type="text/javascript" src="registration.js"></script> -->
+</head>
+
+<body class="background" onload="emailformValidation()">
+
+	<div class="tab">
+
+      <table style="width:100%">
+        <tr>
+          <th><i class="fa fa-check-circle circle"></i><span class="personal">Personal Details</span></th>
+          <th><i class="fa fa-check-circle circle"></i><span class="company">Company Details</span></th>
+          <th><span class="number">3</span>Email Verification</th>
+        </tr>
+      </table>
+
+    </div>
+
+<div>
+
+
+    <!-- <form> -->
+
+		<div class="header">
+            <h1>Enter your OTP</h1>
+        </div>
+
+         <div class="centeralign">
+         	<p>For your security, we need to verify your identity. We sent a 5-digit</p>
+         		<span class="span">code to &nbsp<b id="emailidvalue"></b>.Please enter it below.</span>
+         </div>
+         <br>
+
+    	<div class="backgroundeyc">
+
+	         <div>
+	         	<h5>Enter your code</h5> 
+	         </div>
+
+	         <div>
+	         	<input type="text" />
+    				<input type="text" />
+    				<input type="text" />
+    				<input type="text" />
+    				<input type="text" />
+	         </div>
+	         <br>
+	         <div>
+	         		<button class="backbt" onclick="previouspagecmpy()">Back</button>
+	         		<button class="verify" onclick="thqfn()">Verify</button>
+	         </div>
+	         <br>
+    	</div>
+    	<br>
+    	<div class="bottom">
+    		
+    		<div>
+    			<p>Didn't receive the email? Check your spam filter for an email</p>
+    				<span class="span1">from &nbsp<b id="emailidvalue1"></b>.</span>
+    		</div>
+
+    	</div>
+
+   <!--  </form> -->
+
+</div>
+
+
+<!-- <script>
+	document.getElementById("emailidvalue").innerHTML=localStorage.getItem("emailId"); name@domain.com
+</script> -->
+</body>
+
+</html>

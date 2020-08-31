@@ -1,0 +1,124 @@
+.tab {
+   	color: white;
+    border: 1px solid #ccc;
+    background-color: #0C6283;
+    padding-left: 20%;
+    padding-right: 19%;
+    height: 36px;
+    padding-top: 10px;
+  }
+
+.personal {
+	 color: #d7d6d6;
+}
+
+.company {
+	color: #d7d6d6;
+}
+
+.circle {
+	font-size: larger;
+    padding-right: 3%;
+}
+
+.background {
+	background-color: #f9fafa;
+}
+
+.number {
+  	border-radius: 50%;
+ 	background: #ed5901;
+  	padding: 2% 3%;
+  	margin-right: 4%;
+}
+
+.header {
+	text-align: center;
+}
+
+.centeralign {
+	padding-left: 33%;
+}
+
+.backgroundeyc {
+	border: 1px solid #d7d6d6;
+	margin-left: 29%;
+    margin-right: 28%;
+    text-align: center;
+    background-color: white;
+}
+
+input {
+		width: 35px;
+		height: 40px;
+		border: 1px solid #d7d6d6;
+		text-align: center;
+		font-size: 24px;
+		color: black;
+		margin: 0 2px;
+}
+
+/*#digit-1 {
+	margin-right: 25px;
+	outline: none;
+}
+
+#digit-2 {
+	margin-right: 25px;
+	outline: none;
+}
+
+#digit-3 {
+	margin-right: 25px;
+	outline: none;
+}
+
+#digit-4 {
+	margin-right: 25px;
+	outline: none;
+}
+
+#digit-5 {
+	outline: none;
+}*/
+
+.backbt {
+	width: 15%;
+    height: 31px;
+    font-size: small;
+    border: 1px solid #d7d6d6;
+    margin-right: 1%;
+    outline: none;
+}
+
+.verify {
+    width: 40.5%;
+    height: 31px;
+    font-size: small;
+    background-color: #facdb3;
+    color: white;
+    border: 1px solid #d7d6d6;
+    margin-left: 1%;
+    outline: none;
+}
+
+p {
+	padding-top: 3%;
+    line-height: 0px;
+}
+
+.span {
+	margin-left: 50px;
+}
+
+.span1 {
+	margin-left: 15%
+}
+
+.bottom {
+	border: 1px solid #d7d6d6;
+	margin-left: 29%;
+    margin-right: 28%;
+    text-align: center;
+    background-color: white;
+}

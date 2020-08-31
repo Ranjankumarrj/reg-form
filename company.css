@@ -1,0 +1,106 @@
+.tab {
+   	color: white;
+    border: 1px solid #ccc;
+    background-color: #0C6283;
+    padding-left: 20%;
+    padding-right: 19%;
+    height: 36px;
+    padding-top: 10px;
+  }
+
+.personal {
+	 color: #d7d6d6;
+}
+
+.circle {
+	font-size: larger;
+    padding-right: 3%;
+}
+
+.email {
+	color: #d7d6d6;
+}
+
+.background {
+	background-color: #f9fafa;
+}
+
+
+.number {
+  	border-radius: 50%;
+ 	background: #ed5901;
+  	padding: 2% 3%;
+  	margin-right: 4%;
+}
+
+.number2 {
+  	border-radius: 50%;
+  	padding: 2% 3%;
+  	margin-right: 4%;
+  	background: #c6c6c6;
+    color: whitesmoke;
+}
+
+.header {
+	text-align: center;
+}
+
+.centerbackground {
+	border: 1px solid #d7d6d6;
+	margin-left: 29%;
+    margin-right: 33%;
+	background-color: white;
+}
+
+.avatar {
+  padding-left: 2%;
+  vertical-align: middle;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  padding-bottom: 2%;
+}
+
+p {
+	display: inline-block;
+	padding-left: 1%;
+	position: relative;
+    top: -3px;
+    color: #F36B12;
+}
+
+.centeralign {
+	padding-left: 3%;
+}
+
+input[type=text] {
+  width: 87.5%;
+  padding: 10px;
+  margin: 4px 3% 1%;
+  display: block;
+  border: 1px solid #d7d6d6;
+  outline: none;
+}
+
+.terms {
+	color: #F36B12;
+}
+
+.backbt {
+	width: 16%;
+    height: 31px;
+    font-size: small;
+    border: 1px solid #d7d6d6;
+    outline: none;
+}
+
+.send {
+	margin-left: 2%;
+    width: 76.5%;
+    height: 31px;
+    font-size: small;
+    background-color: #facdb3;
+    color: white;
+    border: 1px solid #d7d6d6;
+    outline: none;
+}
