@@ -46,7 +46,7 @@ function regformValidation() {
 	return true;
 }
 
- var cansubmit = false;
+// --------------------------Registration validation--------------------------------------------
 
 function cmpyformValidation() {
 
@@ -81,12 +81,9 @@ function cmpyformValidation() {
 		return false;
 	}
 
-	this.cansubmit= true;
-
-	if (cansubmit == true) {
-            document.getElementById('submitbutton').enable;
-        }
+	return true;
 }
+// --------------------------Company validation---------------------------------------
 
 function localstoragereg() {
 
@@ -111,6 +108,8 @@ function localstoragereg() {
 	localStorage.setItem("Number",number);
 }
 
+//--------------------localstorage registration----------------------------
+
 function localstoragecmpy() {
 
 	var companyname = document.getElementById("companyname").value;
@@ -125,6 +124,7 @@ function localstoragecmpy() {
 	return false;
 }
 
+//----------------------------localstorage Company ---------------------------------
 
 function emailformValidation() {
 	document.getElementById("emailidvalue").innerHTML=localStorage.getItem("emailId");
@@ -133,7 +133,7 @@ function emailformValidation() {
 
 }
 
-
+//---------------------email pass one page to another page------------
 
 
 
