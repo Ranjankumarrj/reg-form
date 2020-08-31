@@ -15,30 +15,15 @@ function thqfn() {
 
 function regformValidation() {
 	var username = document.getElementById("uname"); 
-	// var gender = document.getElementById("male");
-	// alert(gender);
-	// // var female = document.getElementById("female");
-	// // var other = document.getElementById("other");
 	var countryname = document.getElementById("country");
 	var statename = document.getElementById("state");
 	var phonenumber = document.getElementById("number");
 
 	if (username.value == "") {
-		// window.alert("Please enter your name."); 
         username.focus(); 
         username.style.border="solid 1px red";
 		return false;
 	}
-
-	// if (male.value.checked == "") {
-	// 	male.focus(); 
-	// 	// female.focus();
-	// 	// other.focus();
- //        male.style.border="solid 1px red";
- //        // female.style.border="solid 1px red";
- //        // other.style.border="solid 1px red";
-	// 	return false;
-	// }
 
 	if (countryname.selectedIndex < 1) {
 		countryname.focus();
@@ -106,9 +91,6 @@ function cmpyformValidation() {
 function localstoragereg() {
 
 	var fullname = document.getElementById("uname").value;
-	// var gender = document.getElementById("gender").value;
-	// var genderf = document.getElementById("female").value;
-	// var gendero = document.getElementById("other").value;
 	var country = document.getElementById("country").value;
 	var state = document.getElementById("state").value;
 	var number = document.getElementById("number").value;
@@ -121,21 +103,6 @@ function localstoragereg() {
 	}else if (document.getElementById('other').checked) {
 		rate_value = document.getElementById('other').value;
 	}
-	// var details = {
-	// 	uname : document.getElementById("uname").value,
-	// 	// country : country,
-	// 	// state : state,
-	// 	// number : number,
-	// };
-
-	// alert(uname);
-
-	// let a ;
-	// 		a = JSON.parse(localStorage.getItem('personaldetails')) || [];
-
-	// 		a.push(details);
-	// 		console.log(details);
-	// 			localStorage.setItem('personaldetails', JSON.stringify(details));
 
 	localStorage.setItem("Fullname",fullname);
 	localStorage.setItem("Gender",rate_value);
@@ -165,24 +132,6 @@ function emailformValidation() {
 	console.log(localStorage.getItem("emailId"));
 
 }
-
-// (function() {
-//     $('form > input').keyup(function() {
-
-//         var empty = false;
-//         $('form > input').each(function() {
-//             if ($(this).val() == '') {
-//                 empty = true;
-//             }
-//         });
-
-//         if (empty) {
-//             $('#register').attr('disabled', 'disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
-//         } else {
-//             $('#register').removeAttr('disabled'); // updated according to http://stackoverflow.com/questions/7637790/how-to-remove-disabled-attribute-with-jquery-ie
-//         }
-//     });
-// })()
 
 
 

@@ -3,40 +3,99 @@
 
 <head>
   <title>Registration From</title>
+  <link rel="stylesheet" type="text/css" href="registration.css">
+  <script type="text/javascript" src="registration.js"></script>
 </head>
 
-<body>
+<body class="background">
+
+  <div>
 
     <div class="tab">
-        <button class="tablinks" onclick="openCity(event, 'London')">Personal Details</button>
-        <button class="tablinks" onclick="openCity(event, 'Paris')">Company Details</button>
-        <button class="tablinks" onclick="openCity(event, 'Tokyo')">Email Verification</button>
-      </div>
 
-    <form action="/action_page.php">
-        <div class="container">
-          <h1>Add your personal details</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-          <hr>
-      
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" id="email" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-      
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-          <hr>
-          <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
-      
-          <button type="submit" class="registerbtn">Register</button>
-        </div>
-        
-        <div class="container signin">
-          <p>Already have an account? <a href="#">Sign in</a>.</p>
-        </div>
-      </form>
+      <table style="width:100%">
+        <tr>
+          <th><span class="number1">1</span>Personal Details</th>
+          <th class="company"><span class="number2">2</span>Company Details</th>
+          <th class="email"><span class="number2">3</span>Email Verification</th>
+        </tr>
+      </table>
+
+  </div> 
+
+          <div class="header">
+            <h1>Add your personal details</h1>
+            <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+          </div>
+
+    <form name="form" action="company.html" method="POST" onSubmit="return regformValidation()">
+
+      <div class="centerbackground">
+          <br>
+          <div>
+            <label class="centeralign">Full Name</label>
+            <input type="text" placeholder="Enter your Full Name" name="name" id="uname">
+          </div>
+          <br>
+          <div>
+            <label class="centeralign">Gender</label>
+            <br>
+             <input type="radio" name="radio" id="male" value="male" required />
+             <span>Male</span>
+
+             <input type="radio" name="radio" id="female" value="female"/>
+             <span>Female</span>
+
+             <input type="radio" name="radio" id="other" value="other"/>
+             <span>Other</span>
+
+
+            </div>
+          <br>
+          <div>
+            <label class="centeralign">Country</label>
+            <br>
+            <select class="country" id="country">
+              <option value=""></option>
+              <option value="India">India</option>
+              <option value="United States">United States</option>
+              <option value="China">China</option>
+              <option value="Russia">Russia</option>
+            </select>
+          </div>
+          <br>
+          <div>
+            <label class="centeralign">State</label>
+            <br>
+            <select class="state" id="state">
+              <option value=""></option>
+              <option value="Tamil Nadu">Tamil Nadu</option>
+              <option value="Kerala">Kerala</option>
+              <option value="Telangana">Telangana</option>
+              <option value="Andhra Pradesh">Andhra Pradesh</option>
+            </select>
+          </div>
+          <br>
+          <div class="input-box">
+            <label>Phone</label>
+            <br>
+            <input value="" autofocus="autofocus" class="phone" id="number" />
+            <span class="unit">+91</span>
+          </div>
+          <br>
+          <div class="centeralign">
+              <button class="next" onclick="localstoragereg()">Next</button>
+          </div>
+          <br>
+       </div>
+
+          <div class="login">
+            <p>Already have an account?<a href="#">Log in</a></p>
+          </div>
+
+    </form>
+
+  </div>
       
 </body>
 
